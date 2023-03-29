@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Proxima Nova";
+    font-style: normal;
+    font-weight: 400;
+    src: url("fonts/Proxima Nova/proximanova_regular.ttf")
+}
+@font-face {
+    font-family: "Proxima Nova";
+    font-style: bold;
+    font-weight: 700;
+    src: url("fonts/Proxima Nova/proximanova_bold.otf")
+}
+body {font-family: "Proxima Nova", "Arial";}
+/* head */
+.head_wrapper {
+    height: 120px;
+    box-shadow: 0px 2px 4px rgba(115, 115, 115, 0.1);
+    position: relative;
+}
+.head_wrapper a.button {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    background-color: #EF760D;
+    text-decoration: none;
+    padding: 10px 0 0 17px;
+    color: white;
+    font-size: 16px;
+    border-radius: 3px;
+    position: absolute;
+    position: absolute;
+    left: 21.09%;
+    right: 70.05%;
+    top: 33.33%;
+}
+.head_wrapper a img {
+    height: 61px;
+    width: 188px;
+    position: absolute;
+    left: 45.05%;
+    right: 45.05%;
+    top: 25%;
+}
+.head_wrapper .wrapper_link div:nth-child(1) {
+    position: absolute;
+    right: 29.38%;
+    top: 37%;
+    
+}
+.head_wrapper .wrapper_link div:nth-child(2) {
+    position: absolute;
+    right: 21.09%;
+    top: 37%;
+}
+.head_wrapper .wrapper_link div:nth-child(1) span {
+    font-size: 12px;
+    position: relative;
+    left: 28px;
+    top: -4px;
+}
+.head_wrapper .wrapper_link div:nth-child(1) svg {
+    position: relative;
+    left: -6px;
+    top: 1px;
+}
+.head_wrapper .wrapper_link div:nth-child(2) svg {
+    position: relative;
+    left: -6px;
+    top: 2px;
+}
+.head_wrapper .wrapper_link div a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 0.3px solid #3F3F3F;
+}
+/* body */
+#container {
+  width: 1010px;
+  margin: 0 auto 0 auto;
+}
+#container .index_present {
+  display: inline-block;
+}
+#container .index_present img {
+  width: 461px;
+  height: 282px;
+  margin: 137px 0 0 3px;
+}
+#container .index_present h1 {
+  margin: -345px 0 0 520px;
+  font-size: 35px;
+  line-height: 47px;
+  color: #2C237D;
+}
