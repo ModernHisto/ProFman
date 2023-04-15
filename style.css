@@ -10,6 +10,12 @@
     font-weight: 700;
     src: url("fonts/Proxima Nova/proximanova_bold.otf")
 }
+@font-face {
+  font-family: "Proxima Nova";
+  font-style: bold;
+  font-weight: 600;
+  src: url("fonts/Proxima Nova/proximanova_black.ttf")
+}
 body {font-family: "Proxima Nova", "Arial";}
 /* head */
 .head_wrapper {
@@ -76,11 +82,12 @@ body {font-family: "Proxima Nova", "Arial";}
 }
 /* body */
 #container {
-  width: 1010px;
+  width: 1110px;
   margin: 0 auto 0 auto;
 }
 #container .index_present {
-  display: inline-block;
+  width: 1010px;
+  margin: 0 auto 0 auto;
 }
 #container .index_present img {
   width: 461px;
@@ -132,4 +139,57 @@ body {font-family: "Proxima Nova", "Arial";}
 }
 #container .index_present .present_uslugi a:nth-child(8) span {
   margin: 6px 0 0 -7px;
+}
+
+/*index_uslugi*/
+#container .index_uslugi {
+  margin: 80px 0 0 -10px;
+}
+#container .index_uslugi .links_services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#container .index_uslugi .links_services a {
+  width: auto;
+}
+
+#container .index_uslugi h1 {font-size: 36px; margin: 0 0 49px 0}
+
+#container .index_uslugi .links_services a div {
+  height: 161px;
+  padding: 0 47.8px;
+  border-right: 0.5px solid #C4C4C4;
+}
+#container .index_uslugi .links_services a:nth-child(-n+6) {
+margin-bottom: 35px ;
+}
+#container .index_uslugi .links_services a:nth-child(6n) div {
+  border-right: none;
+}
+
+#container .index_uslugi .links_services a div svg {
+  height: 90px;
+  width: 90px;
+  margin-top: 35.5px;
+  fill: #2C237D;
+}
+
+#container .index_uslugi .links_services span {
+  display: inline-block;
+  width: 158px;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+  font-size: 13px;
+  text-align: center;
+  margin: 15px 12px 0 12px;
+}
+
+#container .index_uslugi .links_services a:hover div svg {
+  fill: #EF760D;
+}
+#container .index_uslugi .links_services a:hover span {
+  color: #EF760D;
 }
