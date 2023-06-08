@@ -6,16 +6,19 @@
 }
 @font-face {
     font-family: "Proxima Nova";
-    font-style: bold;
-    font-weight: 700;
+    font-weight: bold;
     src: url("fonts/Proxima Nova/proximanova_bold.otf")
 }
 @font-face {
   font-family: "Proxima Nova";
-  font-style: bold;
-  font-weight: 600;
-  src: url("fonts/Proxima Nova/proximanova_black.ttf")
+  font-weight: 900;
+  src: url("fonts/Proxima Nova/proximanova_black.otf")
 }
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("fonts/Roboto Medium/ofont.ru_Roboto Medium.ttf");
+}
+
 body {font-family: "Proxima Nova", "Arial";}
 /* head */
 .head_wrapper {
@@ -80,6 +83,7 @@ body {font-family: "Proxima Nova", "Arial";}
     color: black;
     border-bottom: 0.3px solid #3F3F3F;
 }
+
 /* body */
 #container {
   width: 1110px;
@@ -96,7 +100,6 @@ body {font-family: "Proxima Nova", "Arial";}
 }
 #container .index_present h1 {
   margin: -345px 0 0 520px;
-  font-size: 35px;
   line-height: 47px;
   color: #2C237D;
 }
@@ -155,7 +158,7 @@ body {font-family: "Proxima Nova", "Arial";}
   width: auto;
 }
 
-#container .index_uslugi h1 {font-size: 36px; margin: 0 0 49px 0}
+#container .index_uslugi h1 {margin: 0 0 49px 0;}
 
 #container .index_uslugi .links_services a div {
   height: 161px;
@@ -163,7 +166,7 @@ body {font-family: "Proxima Nova", "Arial";}
   border-right: 0.5px solid #C4C4C4;
 }
 #container .index_uslugi .links_services a:nth-child(-n+6) {
-margin-bottom: 35px ;
+  margin-bottom: 35px ;
 }
 #container .index_uslugi .links_services a:nth-child(6n) div {
   border-right: none;
@@ -193,3 +196,83 @@ margin-bottom: 35px ;
 #container .index_uslugi .links_services a:hover span {
   color: #EF760D;
 }
+
+/*index_call_instruction*/
+#container .index_call_instruction {
+  margin-top: 98px;
+}
+#container .index_call_instruction h1 {
+  font-family:"Roboto Medium";
+  font-weight: 100;
+  font-size: 2em;
+}
+
+/*.visual_instruction*/
+#container .index_call_instruction .visual_instruction  {
+  color: #2C237D;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  -webkit-user-select: none;
+  user-select: none;
+}
+/*Картинки*/
+#container .index_call_instruction .visual_instruction :nth-child(3), .visual_instruction :nth-child(7) {
+  color: #EF760D;
+  width: 60px;
+  height: 60px;
+  margin-top: 3.9%;
+}
+/*Цифры*/
+#container .index_call_instruction .visual_instruction :nth-child(1), .visual_instruction :nth-child(5), .visual_instruction :nth-child(9) {
+  font: 120px "Proxima Nova";
+  font-weight: 900;
+  z-index: 1;
+}
+/*2 полоски (оран.)*/
+#container .index_call_instruction .visual_instruction :nth-child(2), .visual_instruction :nth-child(4) {
+  border-top: 1px solid #EF760D;
+  margin-top: 6.7%;
+  flex-shrink: 10;
+  margin-left: -7px;
+}
+.visual_instruction :nth-child(2) {
+  width: 145px;
+  margin-right: -9px;
+}
+.visual_instruction :nth-child(4) {
+  margin-left: -8px;
+  width: 168px;
+  margin-right: -29px;
+}
+/*2 полоски (серые)*/
+#container .index_call_instruction .visual_instruction :nth-child(6), .visual_instruction :nth-child(8) {
+  border-top: 1px solid #C8C8C8;
+  flex-shrink: 10;
+}
+.visual_instruction :nth-child(6) {
+  margin: 6.7% -9.9px 0 -11px;
+  width: 148px;
+}
+.visual_instruction :nth-child(8) {
+  margin: 6.7% -35px 0 -8px;
+  width: 160px;
+}
+/*.visual_instruction^*/
+#container .index_call_instruction .text_for_steps {
+  display: flex;
+  justify-content: space-around;
+  font-size: 14px;
+  margin-top: 10px;
+}
+#container .index_call_instruction .text_for_steps div {
+  width: 260px;
+  text-align: center;
+
+}
+
+
+
+
+
+footer {height: 400px; border-top: 1px solid blue;}
