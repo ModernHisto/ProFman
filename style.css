@@ -19,7 +19,7 @@
   src: url("fonts/Roboto Medium/ofont.ru_Roboto Medium.ttf");
 }
 
-body {font-family: "Proxima Nova", "Arial";}
+body {font-family: "Proxima Nova", "Arial"; line-height: normal;}
 /* head */
 .head_wrapper {
     height: 120px;
@@ -201,7 +201,7 @@ body {font-family: "Proxima Nova", "Arial";}
 #container .index_call_instruction {
   margin-top: 98px;
 }
-#container .index_call_instruction h1 {
+#container .index_call_instruction h1{
   font-family:"Roboto Medium";
   font-weight: 100;
   font-size: 2em;
@@ -268,11 +268,66 @@ body {font-family: "Proxima Nova", "Arial";}
 #container .index_call_instruction .text_for_steps div {
   width: 260px;
   text-align: center;
+}
 
+/*.pro_nas*/
+#container .pro_nas {
+  margin-top: 80px;
+}
+#container .pro_nas h1 {
+  font-family:"Roboto Medium";
+  font-weight: 100;
+  margin: 0px 0 30px 0;
+  font-size: 2em;
+}
+
+#container .wrapper_pro_nas {
+  display: flex;
+  justify-content: space-between;
+}
+#container .pro_nas .pro_nas_txt {
+  width: 445px;
+}
+#container .pro_nas .pro_nas_img {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 540px;
+  height: 190px;
+}  
+#container .pro_nas .pro_nas_img img {
+  width: 65px;
+  height: 65px;
+  margin-right: 30px;
+}
+#container .pro_nas .pro_nas_img img:nth-child(3), #container .pro_nas .pro_nas_img img:nth-child(7) {
+  margin-left: 30px;
+} 
+#container .pro_nas .pro_nas_img div {
+  width: 160px;
+  margin-top: 4px;
+}
+
+/*footer*/
+footer {box-shadow: 0px -2px 4px 0px rgba(115, 115, 115, 0.10); margin-top: 80px;}
+footer .footer_wrapper {
+  width: 1110px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 32px 0 21px 0;
+}
+footer .footer_wrapper a {text-decoration: none; color: black;}
+footer .footer_wrapper div:nth-child(2) {
+  margin-top: -12px;
+  line-height: 10px;
+  text-decoration: none;
+}
+footer .footer_wrapper div:nth-child(3) a {
+  text-decoration: underline;
 }
 
 
 
 
-
-footer {height: 400px; border-top: 1px solid blue;}
