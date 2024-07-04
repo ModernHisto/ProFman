@@ -531,7 +531,7 @@ footer .footer_wrapper div:nth-child(3) a {
 
 @media (min-width: 300px) and (max-width: 1200px) {
   header {
-    width: 115%;
+    width: 118%;
   }
   .head_wrapper {
     width: 100%;
@@ -542,7 +542,7 @@ footer .footer_wrapper div:nth-child(3) a {
   }
 
   footer {
-    width: 115%;
+    width: 118%;
   }
   .footer_wrapper {
     justify-content: space-evenly;
